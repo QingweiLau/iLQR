@@ -28,8 +28,7 @@ def plot_controls(ax, v, w, t):
     ax.grid(True)
 
 
-def plot_policy(x, y, phi, v, w, t):
-    fig, ax = plt.subplots(1, 2, figsize=(12, 6))
+def plot_policy(ax, x, y, phi, v, w, t):
     plot_trajectory(ax[0], x, y, phi)
     plot_controls(ax[1], v, w, t)
     plt.show()
